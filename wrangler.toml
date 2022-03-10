@@ -1,4 +1,4 @@
-name = "worker"
+name = "blog"
 type = "javascript"
 
 account_id = ""
