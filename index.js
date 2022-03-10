@@ -231,18 +231,6 @@
         document.body.classList.remove('dark');
         __console.environment.ThemeStore.setState({ mode: 'light' });
       }
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        onDark();
-      }
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-          const newColorScheme = event.matches ? "dark" : "light";
-          if (newColorScheme==="dark"){
-            onDark();
-          }
-          else{
-            onLight();
-          }
-      });
       function toggle() {
         if (document.body.classList.contains('dark')) {
           onLight();
